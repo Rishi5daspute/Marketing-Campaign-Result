@@ -1,47 +1,166 @@
-## Marketing-Campaign-Result
+# Situation
 
-Freedom Debt Relief’s customers are people who have a substantial amount of debt and because of an unexpected hardship, are no longer able to make their minimum monthly payments. Upon enrolling in Freedom’s Debt Relief program, customers cease making payments to their creditors and instead make deposits they can afford into a new dedicated bank account with Freedom. Freedom uses these funds to negotiate with each of the client’s creditors to settle the debt, typically at only a fraction of what was originally owed. Once a settlement has been agreed upon for an individual account, Freedom facilitates payments from the dedicated bank account to the creditor based on the terms of the settlement agreement. Freedom then collects fees from the client for the individual account that was settled. Freedom earns fees for each account it successfully negotiates a settlement agreement. The number of settlement agreements Freedom can negotiate is proportional to the monthly deposited amount. Assume industry statistics for any analysis input that you would want to use that is not provided here, including but not limited to fee percentage Freedom would collect along with ongoing cost per client between initial enrollment and program graduation.
+Freedom launched a $5M marketing campaign to communicate the value of its debt-relief program and motivate customers to take meaningful steps toward financial freedom.
+The campaign ran for one month (Month 3) within a five-month observation period.
 
-## Assignment
-Imagine that Freedom ran a recent marketing campaign to promote the value proposition of how the debt relief program helps people achieve financial freedom. Assume the cost of this campaign was $5 million. There are five months of data in the datasets provided. Let’s say campaign took place over the course of the third month. You now want to show the marketing, sales and operations teams just how successful this campaign was.
+Post-campaign, stakeholders wanted clarity on:
 
-Using the three datasets given:
+Whether the campaign led to real financial impact, not just awareness
 
-Provide a quantitative assessment of whether the marketing campaign was successful. How and why did you choose your specific success metric(s)?
-Based on the provided data, how would you recommend campaign strategy be adjusted in the future to improve performance?
-How do you think campaign performance would have changed if we did not run the campaign in Month 3, but instead postponed it until month 6? Provide an incremental number versus your result in Question #1.
+Which customer segments responded the most
 
-# Data Description
-Attached you will find three files with the data you will need to complete the analysis.
+Whether campaign timing influenced outcomes
 
-client_data.csv: You will find data specific to fictional clients
+The challenge was to isolate campaign-driven behavior from normal customer activity and present insights in a way that could support future strategic decisions.
 
-client_id: Randomly generated unique surrogate identifier for a client
-client_geographical_region: Client geographical location in relation to U.S. Census definitions
-client_residence_status: Client residence status in relation to whether they rent or own
-client_age: Client age in relation to date of birth
-deposit_data.csv: You will find data specific to the client deposit behavior
+# Task
 
-client_id: Randomly generated unique surrogate identifier for a client
-deposit_type: Delineates whether a client deposit is the scheduled record or actual record
-deposit_amount: Client deposit amount to the dedicated bank account with Freedom
-deposit_cadence: Timing and pattern of client deposit activity
-deposit_date: Deposit date for deposit type
-calendar_data.csv: This is a calendar reference table
+The objective of this analysis was to:
 
-gregorian_date: This date aligns with the Gregorian calendar
-month_name: These are the designated months in the case study
-Month 1 and 2 are pre-campaign
-Month 3 is the campaign
-Month 4 and 5 are post-campaign
-Note: These datasets were created for this analytical exercise and are only intended to be used to assess the critical thinking and technical abilities of interview candidates. This data purposely does not reflect actual client or deposit information. No inferences should be made from this information in regard to Freedom’s client base, deposit activity, company size or company growth trajectory.
+Quantify the true business impact of the campaign
 
-# Practicalities
-You are free to use any tool or means you would like to highlight your abilities, but we would like to see something more advanced than Excel pivot tables, for example. Not only your ability to provide the correct results is important, but also how you decide to visualize and explain your results.
+Use metrics that directly reflect revenue-relevant behavior
 
-Assume the following:
+Identify high-value customer segments that drove results
 
-There is no seasonality in the results, and the campaign spend was distributed evenly across Month 3 (i.e., spend on the first day is the same as spend on the last day).
-Channel mix, targeting, and efficiency are outside the scope of this exercise, but you may address it after answering the 3 questions.
-There may be data provided that is not useful in your analysis.
+Provide clear recommendations for future campaigns
 
+Evaluate whether running the campaign in Month 3 was the right timing decision
+
+All findings needed to be clear, conservative, and explainable to non-technical stakeholders.
+
+# Action
+1. Understanding the customer base before measuring impact
+
+<img width="580" height="455" alt="client age distribution" src="https://github.com/user-attachments/assets/48960186-72c0-48bf-989f-f21f5deac7b0" />
+
+
+Before evaluating campaign performance, I analyzed the customer demographic profile to ensure the audience was stable and financially capable.
+
+What this revealed:
+The customer base is primarily concentrated between ages 40–65, indicating financial maturity and consistency across the dataset.
+
+Why this mattered:
+This ensured that later changes in behavior could be confidently attributed to the campaign rather than demographic volatility.
+
+2. Selecting a success metric aligned with real business value
+
+<img width="833" height="624" alt="deposit amount by type" src="https://github.com/user-attachments/assets/77ff5df6-b902-426c-ad62-b384f8ba593a" />
+
+
+To avoid overstating performance, I distinguished between:
+
+Actual deposits (money transferred)
+
+Scheduled deposits (planned but not yet realized)
+
+Only actual deposits were used in campaign evaluation.
+
+Why this mattered:
+This ensured the analysis reflected real financial commitment, creating credibility across marketing, finance, and leadership teams.
+
+3. Establishing a baseline and measuring campaign lift
+
+<img width="846" height="624" alt="Actual deposit per month" src="https://github.com/user-attachments/assets/c07b2beb-1466-46ab-9a8b-dba3137d573b" />
+
+
+I compared deposit behavior across:
+
+Pre-campaign baseline (Months 1–2)
+
+Campaign month (Month 3)
+
+Post-campaign period (Months 4–5)
+
+What this showed:
+There is a clear and significant jump in deposits during Month 3, well above baseline levels.
+
+Why this mattered:
+This visually confirmed that the campaign coincided with a meaningful change in customer behavior.
+
+4. Validating that the impact was sustained, not temporary
+
+<img width="846" height="624" alt="Actual deposit per month" src="https://github.com/user-attachments/assets/55a88d5d-7f04-4a99-a139-6ed0b185c9ce" />
+
+
+After filtering for actual deposits only, I examined whether performance remained elevated beyond the campaign month.
+
+What this showed:
+Deposits remained consistently higher in Months 4 and 5 compared to the pre-campaign baseline.
+
+Insight:
+The campaign created momentum, not just a short-term spike.
+
+5. Confirming engagement came from more customers, not just larger transactions
+
+[Add Graph 5: Number of Deposits per Month – Line Chart]
+<img width="877" height="624" alt="number of deposit per month" src="https://github.com/user-attachments/assets/7e13aee0-a692-45c2-a392-934e2dfbe734" />
+
+This graph tracks the count of deposits made each month.
+
+What this showed:
+There was a sharp increase in the number of deposits during the campaign month.
+
+Insight:
+The campaign increased participation across customers, not just spending by a few high-value individuals.
+
+6. Identifying the most responsive and valuable customer segments
+
+[Add Graph 6: Deposit Amount by Age Group Over Time – Multi-Line Chart]
+<img width="848" height="624" alt="deposit count per month by age group" src="https://github.com/user-attachments/assets/309f4ffa-71e1-4dd9-b681-0d7a1b24d29a" />
+
+Customers aged 40–60 showed the strongest response during the campaign, with higher and more sustained deposit activity.
+
+[Add Graph 7: Deposit Amount by Residence Status – Own vs Rent]
+<img width="989" height="690" alt="depsoit amount per month and residence status" src="https://github.com/user-attachments/assets/e09cb7ed-37fd-4ea7-a792-20008feb4271" />
+
+Homeowners consistently deposited more and responded more strongly to the campaign than renters.
+
+[Add Graph 8: Deposit Amount by Cadence – Monthly / Biweekly / Extra]
+<img width="846" height="624" alt="deposit amount by cadence" src="https://github.com/user-attachments/assets/5ae6e6e5-b1f6-43c6-80b7-ac83b4208c36" />
+
+“Extra” deposits — discretionary contributions beyond scheduled payments — increased notably during and after the campaign.
+
+Why this mattered:
+Extra deposits are a strong signal of trust, confidence, and long-term value.
+
+7. Evaluating whether campaign timing was optimal
+<img width="620" height="129" alt="image" src="https://github.com/user-attachments/assets/009fc197-c473-4c86-b044-dbd2e9964454" />
+
+
+To test whether timing influenced results, I simulated a scenario where the campaign was delayed by three months.
+
+What this showed:
+Delaying the campaign would have resulted in lower total deposits and reduced revenue, even after accounting for normal customer behavior.
+
+Insight:
+Campaign timing itself played a strategic role in maximizing impact.
+
+# Results
+
+
+Key Outcomes
+
+The campaign generated ~$13.7M in incremental deposits
+
+Nearly 11,000 new customers joined during the campaign month
+
+Deposit levels stayed elevated after the campaign ended
+
+Customers aged 40–60 who own homes drove a disproportionate share of value
+
+Extra (discretionary) deposits increased, signaling deeper engagement
+
+Delaying the campaign would have resulted in a ~$1.75M reduction in deposits, translating to a meaningful revenue loss
+
+Final Stakeholder Takeaway
+
+This analysis demonstrates that the campaign:
+
+Delivered real, measurable financial impact
+
+Attracted high-value, financially stable customers
+
+Created sustained behavioral change, not short-term activity
+
+Was strategically well-timed
